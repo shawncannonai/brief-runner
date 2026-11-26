@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brief-runner"
+version = "0.1.0"
+description = "One fresh headless agent per brief: dedupe locks, hard time limit, report contract, engine reroute."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "Environment :: Console", "Topic :: Software Development"]
+
+[project.scripts]
+brief-runner = "brief_runner.cli:main"
+
+[tool.setuptools]
+packages = ["brief_runner"]

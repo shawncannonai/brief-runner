@@ -1,0 +1,8 @@
+{
+  "state_dir": "../state",
+  "kill_grace": 1,
+  "engines": [
+    {"name": "primary", "cmd": ["python3", "tests/fake_engine.py", "quota"]},
+    {"name": "backup", "cmd": ["python3", "tests/fake_engine.py", "ok"]}
+  ]
+}

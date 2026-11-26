@@ -1,0 +1,9 @@
+{
+  "state_dir": "../state",
+  "timeout": 3,
+  "kill_grace": 1,
+  "max_engines": 1,
+  "engines": [
+    {"name": "stuck", "cmd": ["python3", "tests/fake_engine.py", "hang"]}
+  ]
+}
